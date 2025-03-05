@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: 'Poppins',  sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin: 0;
+    background: linear-gradient(120deg, #d4a5ff, #ffb6b9);
+
+.calender {
+    width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #f9f0ff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.calender:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(179, 139, 255, 0.8);
+
+}
+.calender-header{
+    background: linear-gradient(135deg,  #b0005b, #ffadad);
+    color:white;
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+marquee{
+    font-size: 18px;
+    font-weight: bold;
+    color:#7b002c;
+    padding: 8px;
+    background: #ffe4f2;
+    border-bottom: 2px solid #b38bff;
+}
+.calender-body{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+.day-name{
+    background-color: #ffe4f2;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    color: #7733ff; 
+}
+.day {
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #f9f0ff; 
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.day:hover{
+    background-color: #7b002c;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(255, 133, 162, 0.6);
+    
+}
+.empty {
+    background-color: transparent;
+    pointer-events: none;
+}
